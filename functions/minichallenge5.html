@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>
+        Mini Challenge 5
+    </title>
+    <style>
+        body {
+            background-color: #DCD3FF;
+        }
+
+        .grid {
+            background-color: #FFFFFF;
+            width: 380px;
+            height: 100px;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .button-container {
+            margin-left: 85px;
+        }
+
+        button {
+            height: 30px;
+            width: 100px;
+            background-color: #FFABAB;
+            border-radius: 5px;
+            text-align: center;
+            padding: 5px;
+        }
+
+        #down {
+            width: 150px;
+            background-color: #6EB5FF;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>TO BUY:</h2>
+    <div class="grid" id="first-list"></div>
+    <div class="button-container">
+        <button id="up">Move UP</button>
+        <button id="down">Move DOWN</button>
+    </div>
+    <h2>IN THE FRIDGE:</h2>
+    <div class="grid" id="second-list"></div>
+    <script>
+        const downButton = document.querySelector('#down')
+        const upButton = document.querySelector('#up')
+        const buyListDisplay = document.querySelector('#first-list')
+        const fridgeListDisplay = document.querySelector('#second-list')
+
+        const buyList = [' almond milk', ' avocado', ' cheese', ' halloumi']
+        const fridge = []
+
+        //Challenge: Please fill the fridge with 5 items of your choice. 
+        fridge.push(' onion', ' salad', ' chocolate', ' crisps', ' egg')
+
+        //Challenge 2: You have bought some almond milk. Please remove it from the
+        //buyList and add it to the items in fridge.
+        let item = buyList.shift()
+        fridge.unshift(item)
+
+        //Write a function that will remove an item from the fridge, and put it in the
+        //buyList, on the press of the moveUp button.
+
+        function moveUp() {
+            let grocery = fridge.pop()
+            buyList.push(grocery)
+            buyListDisplay.innerHTML = buyList
+            fridgeListDisplay.innerHTML = fridge
+        }
+
+        upButton.addEventListener('click', moveUp)
+
+        //Write a function that will remove the last item in the buyList, 
+        //and put it in the fridge.
+
+        function moveDown() {
+            let item = buyList.pop()
+            fridge.unshift(item)
+            buyListDisplay.innerHTML = buyList
+            fridgeListDisplay.innerHTML = fridge
+        }
+
+        downButton.addEventListener('click', moveDown)
+
+        buyListDisplay.innerHTML = buyList
+        fridgeListDisplay.innerHTML = fridge
+    </script>
+</body>
+
+</html>

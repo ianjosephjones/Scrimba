@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>
+        Mini Challenge 3
+    </title>
+    <style>
+        body {
+            background-color: #FFABAB;
+            display: flex;
+            justify-content: center;
+        }
+
+        h2 {
+            margin-top: 200px;
+
+        }
+
+        button {
+            background-color: #A79AFF;
+            border-radius: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2 id="quote">
+        <h2>
+            <button>Press me!</button>
+
+            <script>
+                const quoteDisplay = document.querySelector('#quote');
+                const button = document.querySelector('button');
+
+                //Challenge: Write a function that will display a random Inspirational Quote
+                //from the quotes array, when the button is pressed.
+                const quotes = [
+                    'Do something today that your future self will thank you for',
+                    'Dont worry, be happy!',
+                    'Your limitation is only your imagination'
+                ];
+
+                function showQuote() {
+
+                    let randomNumber = Math.floor(Math.random() * quotes.length);
+                    let randomQuote = quotes[randomNumber];
+                    quoteDisplay.innerHTML = randomQuote;
+                };
+                button.addEventListener('click', showQuote);
+            </script>
+
+</body>
+
+</html>

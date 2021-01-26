@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>
+        Mini Challenge 4
+    </title>
+    <style>
+        body {
+            background-color: rgb(0, 128, 128);
+        }
+
+        .grid div {
+            height: 20px;
+            width: 20px;
+            border: solid 0.5px blue;
+        }
+
+        .grid {
+            width: 198px;
+            height: 198px;
+            border: solid white;
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .snake {
+            width: 20px;
+            height: 20px;
+            border-radius: 2.5px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <script>
+        const squares = Array.from(document.querySelectorAll('.grid div'));
+        let currentSnake = [];
+
+        //add the number 0 to the currentSnake array to see what happens
+
+        // currentSnake.push(0)
+        //Challenge: draw the snake as 3 squares long on the third row down using unshift
+
+        currentSnake.unshift(19,20,21);
+
+        //Challenge: add to the HEAD of the snake using push
+
+        currentSnake.push(30);
+
+        currentSnake.forEach(index => squares[index].classList.add('snake'));
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+body {
+    font-size: 18px;
+    font-family: 'lato, sans-serif';
+    text-align: center;
+}
+
+.title-text {
+    font-size: 36px;
+    color: white;
+    background: #2e354f;
+    text-transform: uppercase;
+    padding: 20px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.container {
+    margin: 50px auto;
+    width: 650px;
+}
+
+.section-title {
+    text-transform: uppercase;
+
+}
+
+.underlined {
+    color: #ef5839;
+    text-decoration: underline;
+}
+
+.btn {
+    text-decoration: none;
+    background: #ef5839;
+    color: white;
+    padding: 10px 25px;
+    font-weight: 900;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.btn:hover, .btn:focus {
+    background: #d4b44c;
+    color: white;
+
+
+}

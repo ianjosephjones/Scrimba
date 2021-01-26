@@ -1,0 +1,82 @@
+body {
+    font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
+    text-align: center; 
+}
+
+header,
+section {
+    padding: 50px;
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 1200px;
+}
+
+header {
+    background: #FFE600;
+    color: #000;
+    font-size: 24px;
+}
+
+.section-one {
+    background: black;
+    color: white;
+}
+
+.section-two-link { 
+    color: black;
+}
+
+
+/* button styles */
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-accent {
+    background: #FFE600;
+    color: #000;
+}
+
+.btn-dark {
+    background: #000;
+    color: #fff;
+}
+
+.btn-dark:hover, .btn-dark:focus {
+    color: black;
+    background: white;
+}
+
+.btn-accent:focus, .btn-accent:hover {
+    color: #FFE600;
+    background: #000;
+}
+
+/* .button {
+        allows to set a width and height on the element
+    display: inline-block;
+    background: #FFE600;
+    color: black;
+         use 1:2.5 ratio for top and sides for link buttons
+    padding: 15px 30px;
+    text-align: center;
+        this takes away the underline on the link text
+    text-decoration: none;
+    margin-bottom: 50px; 
+}*/
+/* You can add a hover to any class but make it when it is interactive */
+
+/* General rules get put on elements selectors; everything else gets a class
+compound selectors -  typically have the highest depending on what is in the selector
+id - highest priority (1 point)
+class - second priority (10 points)
+elements - least priority (100 points) 
+*/
+
+
+/* whenever you have the same or more selectors the last one has the priority  */

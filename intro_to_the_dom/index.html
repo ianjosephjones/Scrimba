@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>What is the DOM?</title>
+</head>
+
+<body id="body">
+    <h1 id="hello">What is the DOM?</h1>
+    <p>"document object model".</p>
+    <h1 class="things">Thing 1</h1>
+    <h1 class="things">Thing 2</h1>
+    <h1 class="things">Thing 3</h1>
+
+    <ol id="favorite-things">
+        <li class="thing">Raindrops on roses</li>
+        <li class="thing">Whiskers on kittens</li>
+        <li class="thing">Bright copper kettles</li>
+        <li class="thing">Warm woollen mittens</li>
+    </ol>
+
+    <ul id="rangers"></ul>
+
+
+    <button id="button">Click me</button>
+        <h1 id="header">Press here!</h1>
+
+        <input type="text" id="text-input" value="This is some content"/>
+
+
+    <script src="index.js"></script>
+    <!-- 
+    1. What are some of the differences between getElementById and getElementsByClassName?
+* id - returns a single element/object from the document. class name (tag name) returns an array-like object.
+* id - needs an id to find, class name - needs a class to find
+        document.getElementsByTagName("div")
+
+2. What will `.getElementsByClassName` return if there are no elements with the matching class in the document?
+Returns an empty array
+
+
+3. What will `.getElementById` return if there is no element with the matching id in the document?
+`null` -->
+
+</body>
+
+</html>

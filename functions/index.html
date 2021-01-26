@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>
+        Functions
+    </title>
+</head>
+
+<body>
+    <script>
+
+        // Functions
+
+        function showAlert(firstName, lastName) {
+            console.log("hello" + " " + firstName + " " + lastName)
+        }
+
+        showAlert("Ian", "Jones")
+
+        const firstName = "Ian";
+        let calls = 0;
+
+        function alertUser() {
+            calls += 2;
+            console.log(firstName + " you have been called " + calls + " times.")
+        }
+        alertUser()
+
+        /* Math.random & Math.floor 
+        The Math.random() 
+        function returns a floating-point, pseudo-random number 
+        in the range 0 to less than 1 (inclusive of 0, but not 1)
+        with approximately uniform distribution over that range — 
+        which you can then scale to your desired range.
+        
+        The Math.floor() 
+        function returns the largest integer less than
+        or equal to a given number.
+        */
+
+        const items = 10;
+
+        let randomNumber = Math.random() * items;
+
+        console.log(randomNumber)
+
+        let newNumber = Math.floor(randomNumber)
+
+        console.log(newNumber)
+
+        // Math.random & Math.floor Shop Items
+
+        const shopItems = ['dog biscuits', 'collar', 'bones', 'toy'];
+
+        let randomShopItems = Math.random() * shopItems.length;
+        let newShopItems = Math.floor(randomShopItems);
+        let randomShopItem = shopItems[newShopItems];
+
+        console.log(randomShopItem);
+
+
+        // //slice method
+
+        //it does NOT mututate arrays
+        //it produces new ones
+
+        const films = ['Elf', 'Borat', 'It', 'Split', 'Us']
+
+        //get the last 2 films from the array and put them in the thriller section
+        const thriller = films.slice(3, 5)
+        console.log(thriller)
+        console.log(films)
+
+        //get the 3rd and 4th film from the array and put them in the horror section
+        const horror = films.slice(2, 4)
+        console.log(horror)
+
+        //get the first 2 films from the array and put them in the comedy section
+
+        const comedy = films.slice(0, 2)
+        console.log(comedy)
+
+        // push()
+
+        //adds new items to the END of an exisitng array
+        //it mutates that existing array
+        //change the length of that array
+
+        let books = ['Moby Dick', 'Life of Pi', 'Sapiens']
+
+        books.push("Hungry Caterpillar")
+
+        console.log(books)
+
+        let lottery = [34, 67, 39, 67, 23]
+
+        let newLottery = 153;
+
+        lottery.push(newLottery, 100)
+
+        console.log(lottery)
+
+        // unshift()
+
+        //unshift adds new items to the START of an array
+        //it will change the length of the array
+
+        let addLottery = [5, 7, 8, 10, 12]
+
+        const addNumber = 34
+
+        addLottery.unshift(addNumber)
+
+        console.log(addLottery)
+
+        let gardenPlants = [
+            {
+                name: 'roses',
+                origin: 'China'
+            },
+            {
+                name: 'tulips',
+                origin: 'Asia'
+            },
+        ]
+
+        const plant = {
+            name: 'daffodil',
+            origin: 'Spain'
+        }
+
+        gardenPlants.unshift(plant)
+
+        console.log(gardenPlants)
+
+        //pop()
+
+        //remove the last item of an array
+        //mutate the exisitng array
+
+        let planets = ['Earth', 'Mars', 'Saturn', 'Uranus', 'Pluto'];
+
+        let removePlanet = planets.pop();
+
+        console.log(planets);
+        console.log(removePlanet);
+
+        //shift()
+
+        //removes the first item
+        //returns that removed item 
+        //change the length 
+
+        let cars = [
+            {
+                name: 'ford',
+                colour: 'black'
+            },
+            {
+                name: 'volkswagen',
+                colour: 'blue'
+            },
+            {
+                name: 'aston martin',
+                colour: 'red'
+            }
+        ]
+
+        cars.shift()
+        console.log(cars)
+
+    </script>
+</body>
+
+</html>
