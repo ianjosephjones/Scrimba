@@ -1,9 +1,10 @@
 body {
 	font-size: 18px;
-    font-family: 'Lato', sans-serif;
-    text-align: center;
+	font-family: 'Lato', sans-serif;
+	text-align: center;
 }
-html,body {
+html,
+body {
 	overflow-x: hidden;
 	margin: 0;
 	padding: 0;
@@ -15,15 +16,14 @@ h1 {
 	text-transform: uppercase;
 	background: #2e354f;
 	margin: 0;
-    color: white;
-    padding: 25px;
-    margin-bottom: 100px;
+	color: white;
+	padding: 25px;
+	margin-bottom: 100px;
 }
 
-
 .section-title {
-    text-transform: uppercase;
-    font-size: 36px;
+	text-transform: uppercase;
+	font-size: 36px;
 }
 
 .underlined {
@@ -35,29 +35,29 @@ h1 {
 	color: white;
 	font-weight: 900;
 	background: #ef5839;
-    display: inline-block;
-    padding: 10px 25px;
-    margin: 50px;
+	display: inline-block;
+	padding: 10px 25px;
+	margin: 50px;
 }
 
 .btn:hover {
 	color: #2e354f;
-    background: #d4b44c;
-    
+	background: #d4b44c;
 }
 
-.container, contact-section{
-    width: 600px;
-    margin: 0 auto;
-    margin-top: 100px;
-}
-
-.section-title {
-    margin-bottom: 50px;
+.container,
+contact-section {
+	width: 600px;
+	margin: 0 auto;
+	margin-top: 100px;
 }
 
 .section-title {
-    font-size: 40px;
-    border-bottom: 1px solid black;
-    padding-bottom: 10px;
+	margin-bottom: 50px;
+}
+
+.section-title {
+	font-size: 40px;
+	border-bottom: 1px solid black;
+	padding-bottom: 10px;
 }
